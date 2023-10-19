@@ -2,20 +2,30 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int inc(int counter);
-int main(int argc, char *argv[]) 
+
+
+void f(void);
+
+int i;
+int main(void) //int (int argc, char ...µµ ok
+ 
 {
-	int i=10;
-	printf("before calling function i=%d\n",i);
-	inc(i);
-	printf("after calling function i=%d\n", i);
-	
-	
+	for(i=0;i<5; i++)
+	{
+		f();
+	}
 	system("PAUSE");
 	return 0;
 }
-int inc(int counter)
+
+void f(void)
 {
-	counter++;
-	return counter;
+	int i;
+	for(i=0;i<10;i++)
+		printf("#");
 }
+
+
+	 
+	
+
